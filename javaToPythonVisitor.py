@@ -1,4 +1,4 @@
-# Generated from C:/Users/szaro/PycharmProjects/abcdefg/javaToPython.g4 by ANTLR 4.13.1
+# Generated from C:/Users/szaro/PycharmProjects/JtP/javaToPython.g4 by ANTLR 4.13.1
 from antlr4 import *
 if "." in __name__:
     from .javaToPythonParser import javaToPythonParser
@@ -21,6 +21,16 @@ class javaToPythonVisitor(ParseTreeVisitor):
 
     # Visit a parse tree produced by javaToPythonParser#data_type.
     def visitData_type(self, ctx:javaToPythonParser.Data_typeContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by javaToPythonParser#generic_type.
+    def visitGeneric_type(self, ctx:javaToPythonParser.Generic_typeContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by javaToPythonParser#simple_type.
+    def visitSimple_type(self, ctx:javaToPythonParser.Simple_typeContext):
         return self.visitChildren(ctx)
 
 
@@ -69,6 +79,11 @@ class javaToPythonVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by javaToPythonParser#generic_declaration.
+    def visitGeneric_declaration(self, ctx:javaToPythonParser.Generic_declarationContext):
+        return self.visitChildren(ctx)
+
+
     # Visit a parse tree produced by javaToPythonParser#class_body.
     def visitClass_body(self, ctx:javaToPythonParser.Class_bodyContext):
         return self.visitChildren(ctx)
@@ -81,6 +96,16 @@ class javaToPythonVisitor(ParseTreeVisitor):
 
     # Visit a parse tree produced by javaToPythonParser#enum_body.
     def visitEnum_body(self, ctx:javaToPythonParser.Enum_bodyContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by javaToPythonParser#interface_declaration.
+    def visitInterface_declaration(self, ctx:javaToPythonParser.Interface_declarationContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by javaToPythonParser#interface_body.
+    def visitInterface_body(self, ctx:javaToPythonParser.Interface_bodyContext):
         return self.visitChildren(ctx)
 
 
@@ -134,6 +159,11 @@ class javaToPythonVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by javaToPythonParser#increment_decrement.
+    def visitIncrement_decrement(self, ctx:javaToPythonParser.Increment_decrementContext):
+        return self.visitChildren(ctx)
+
+
     # Visit a parse tree produced by javaToPythonParser#expression.
     def visitExpression(self, ctx:javaToPythonParser.ExpressionContext):
         return self.visitChildren(ctx)
@@ -169,8 +199,18 @@ class javaToPythonVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by javaToPythonParser#arithmetic_operation.
+    def visitArithmetic_operation(self, ctx:javaToPythonParser.Arithmetic_operationContext):
+        return self.visitChildren(ctx)
+
+
     # Visit a parse tree produced by javaToPythonParser#compare_operator.
     def visitCompare_operator(self, ctx:javaToPythonParser.Compare_operatorContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by javaToPythonParser#method_signature.
+    def visitMethod_signature(self, ctx:javaToPythonParser.Method_signatureContext):
         return self.visitChildren(ctx)
 
 
@@ -186,11 +226,6 @@ class javaToPythonVisitor(ParseTreeVisitor):
 
     # Visit a parse tree produced by javaToPythonParser#switch_case_statement.
     def visitSwitch_case_statement(self, ctx:javaToPythonParser.Switch_case_statementContext):
-        return self.visitChildren(ctx)
-
-
-    # Visit a parse tree produced by javaToPythonParser#switch_block.
-    def visitSwitch_block(self, ctx:javaToPythonParser.Switch_blockContext):
         return self.visitChildren(ctx)
 
 
@@ -234,6 +269,11 @@ class javaToPythonVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by javaToPythonParser#do_while_statement.
+    def visitDo_while_statement(self, ctx:javaToPythonParser.Do_while_statementContext):
+        return self.visitChildren(ctx)
+
+
     # Visit a parse tree produced by javaToPythonParser#try_catch_statement.
     def visitTry_catch_statement(self, ctx:javaToPythonParser.Try_catch_statementContext):
         return self.visitChildren(ctx)
@@ -271,6 +311,21 @@ class javaToPythonVisitor(ParseTreeVisitor):
 
     # Visit a parse tree produced by javaToPythonParser#function_call.
     def visitFunction_call(self, ctx:javaToPythonParser.Function_callContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by javaToPythonParser#primary_expression.
+    def visitPrimary_expression(self, ctx:javaToPythonParser.Primary_expressionContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by javaToPythonParser#annotation.
+    def visitAnnotation(self, ctx:javaToPythonParser.AnnotationContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by javaToPythonParser#comment.
+    def visitComment(self, ctx:javaToPythonParser.CommentContext):
         return self.visitChildren(ctx)
 
 
