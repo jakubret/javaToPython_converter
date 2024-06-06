@@ -50,8 +50,9 @@ def main():
 if __name__ == "__main__":
     main()
 ````
-2) Place your Java source file (e.g., example.java) in the same directory and run the script:
+2) Select your Java source file (e.g., example.java) or paste a code in :
 ````
+![Convertion window](images/kompilatory.png)
 python convert.py
 ````
 3) The converted Python code will be written to output.py.
