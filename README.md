@@ -55,10 +55,10 @@ if __name__ == "__main__":
 ````
 python java_to_python_gui.py
 ````
-4) Select your Java source file (e.g., example.java) or paste a code in :
+3) Select your Java source file (e.g., example.java) or paste a code in :
  ![Convertion window](images/kompilatory.png) 
 
-3) The converted Python code will be written to output.py.
+4) The converted Python code will be written to output.py.
 ## Example
 **Java Code (example.java)**
 ````
