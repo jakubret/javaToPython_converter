@@ -26,6 +26,7 @@ antlr4 -Dlanguage=Python3 javaToPython.g4
 ````
 ## Usage
 1) Create a Python script to use the converter:
+
 ````
 import os
 from antlr4 import *
@@ -50,11 +51,13 @@ def main():
 if __name__ == "__main__":
     main()
 ````
-2) Select your Java source file (e.g., example.java) or paste a code in :
- ![Convertion window](images/kompilatory.png)
+2) Run app
 ````
-python convert.py
+python java_to_python_gui.py
 ````
+4) Select your Java source file (e.g., example.java) or paste a code in :
+ ![Convertion window](images/kompilatory.png) 
+
 3) The converted Python code will be written to output.py.
 ## Example
 **Java Code (example.java)**
