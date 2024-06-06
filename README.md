@@ -58,7 +58,7 @@ python java_to_python_gui.py
 3) Select your Java source file (e.g., example.java) or paste a code in :
  ![Convertion window](images/kompilatory.png) 
 
-4) The converted Python code will be written to output.py.
+
 ## Example
 **Java Code (example.java)**
 ````
